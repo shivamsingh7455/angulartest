@@ -1,0 +1,15 @@
+<table border="2" id="employee-list">
+    <tr>
+	<th>Emp Name</th>
+        <th>Designation</th>
+        <th>Salary</th>
+        <th>Experience</th>
+    </tr>
+    <tr *ngFor="let e of this.temp.emp;let i=index">
+        <td>{{e.name}}</td>
+        <td>{{e.designation}}</td>
+        <td>{{e.salary}}</td>
+        <td>{{e.experience}}</td>
+        <td><button (click)="remove(i)" id="remove{{i+1}}">Remove</button></td>
+    </tr>
+</table>
