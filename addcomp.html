@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <td colspan="2"><b>Add Employee</b><br></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td><input type="text" name="name" id="name" [(ngModel)]='name'/></td>
+  </tr>
+  <tr>
+    <td>Designation</td>
+    <td><input type="text" name="designation" id="designation" [(ngModel)]='designation'/></td>
+  </tr>
+  <tr>
+    <td>Salary</td>
+    <td><input type="number" name="salary" id="salary" [(ngModel)]='salary'/></td>
+  </tr>
+  <tr>
+    <td>Experience</td>
+    <td><input type="number" name="experience" id="experience" [(ngModel)]='experience'/></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button id="save" (click)="addEmployee()">Add Employee</button></td>
+  </tr>
+</table>
